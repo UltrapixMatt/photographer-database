@@ -6,7 +6,7 @@ const axios = require('axios'); // For making requests to Google Maps API
 require('dotenv').config();
 
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 
 // Middleware
 app.use(express.json());
